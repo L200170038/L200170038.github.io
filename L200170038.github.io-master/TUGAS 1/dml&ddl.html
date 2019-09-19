@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>L200170038/DML&DDL</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="skin/default.css">
+  
+</head>
+
+<body>
+  <section id="header" class="appear"></section>
+  <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="fa fa-bars color-white"></span>
+          </button>
+        
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Ttg.html">Kumpulan Perintah SQL</a></li>
+          <li class="active"><a href="DML&DDL.html">DML&DDL</a></li>
+          
+          
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+
+  <section class="featured">
+    <div class="container">
+      <div class="row mar-bot40">
+        <div class="col-md-6 col-md-offset-3">
+
+          <div class="align-center">
+            <i class="fa fa-flask fa-5x mar-bot20"></i>
+              <div class="scroll">
+                <marquee class="inded" scrollamount="10"><h2 class="slogan"><b>DML&DDL</b></h2></marquee>
+               </div>
+               <br>
+               <br>
+              
+          </div>
+          <div class="align-left">
+            <p>*Data Manipulation Language (DML) adalah sekumpulan elemen sintaks yang mirip dengan bahasa pemrograman komputer yang digunakan untuk memanipulasi data, misalnya memilih, memasukkan, menghapus dan memperbarui data yang ada di dalam database.</p>
+
+            <p>Sebuah Data Manipulation Language yang terkenal adalah Structured Query Language (SQL), yang digunakan untuk mengambil dan memanipulasi data dalam database relasional. Bentuk lain dari DML adalah apa yang digunakan oleh IMS / DLI, CODASYL database, seperti IDMS dan lain-lain.</p>
+
+            <p>Berikut adalah perintah umum yang digunakan oleh DML:</p>
+
+            <p>1.Select adalah perintah yang paling sering digunakan pada SQL, sehingga kadang-kadang istilah query dirujukkan pada perintah select. Select digunakan untuk menampilkan data dari satu atau lebih tabel, biasanya dalam sebuah basis data yang sama.</p>
+            <p>2.Insert digunakan untuk menambah data baru.</p>
+            <p>3.Update digunakan untuk mengubah data yang sudah ada.</p>
+            <p>4.Delete digunakan untuk menghapus sebuah data.</p><br>
+            <p>Berikut adalah perintah-perintah selengkapnya yang terdapat didalam DML:</p>
+
+            <p>1.Merge digunakan untuk memperbarui atau menyisipkan baris kondisional dalam tabel atau view.</p>
+            <p>2.Explain Plan digunakan untuk melihat rencana eksekusi untuk pernyataan SQL.</p>
+            <p>3.Lock Table digunakan untuk mengunci tabel, atau membatasi akses pengguna lain.</p><br>
+            <p>Data Manipulation Language terdiri dari laporan perubahan data SQL, yang memodifikasi data yang disimpan, tetapi bukan skema atau objek database tersebut. Manipulasi objek persisten basis data, misalnya, beberapa tabel atau prosedur yang tersimpan, melalui pernyataan SQL skema, bukan data yang tersimpan di dalamnya, tetapi hal ini dianggap menjadi bagian dari bahasa definisi sebuah data yang terpisah. Dalam SQL dua kategori ini mirip dengan sintaks rinci, jenis data, ekspresi dll, namun berbeda dalam fungsi mereka secara keseluruhan.</p>
+
+            <p>Data Manipulation Language cenderung memiliki banyak rasa dan kemampuan antara vendor database yang berbeda. Ada sejumlah standar yang ditetapkan untuk SQL oleh ANSI, tapi vendor tetap memberikan ekstensi mereka sendiri untuk standar sementara kepada mereka yang tidak menerapkan seluruh standar.</p>
+
+            <p>Data Manipulation Language dibagi menjadi dua jenis, yaitu pemrograman prosedural dan pemrograman deklaratif.</p>
+
+            <p>Pada awalnya, Data Manipulation Language hanya digunakan dalam program komputer, tetapi dengan munculnya SQL, DML telah digunakan secara interaktif oleh database administrator.</p>
+
+            <p>Contoh DML : Mengambil Seluruh Row Data dari table UMS_Siswa
+            SELECT * FROM UMS_Siswa
+
+            <p>Contoh DML : Memasukkan data ke dalam tabel UMS_Siswa</p>
+            <p>INSERT INTO UMS_Siswa(</p>
+            <p>Nama_Siswa,</p>
+            <p>NIM_Siswa,</p>
+            <p>Alamat_Siswa,</p>
+            <p>jenis_kelamin)</p>
+            <p>VALUES ('Alfian','L200170038','Bekonang','Laki-laki');</p><br>
+            <p>===================================================================</p><br>
+
+            <p>*Data Definition Language atau Data Description Language yaitu kumpulan perintah pada SQL untuk menggambarkan desain dari database secara menyeluruh, selain itu DDL (Data Definition Language) juga digunakan untuk membuat, merubah maupun menghapus struktur atau definisi tipe data dari obyek yang ada pada database.</p>
+
+            <p>DDL (Data Definition Language) berfungsi untuk membuat, merubah dan menghapus struktur data pada database. Perintah lain seperti SELECT dan INSERT tidak ada pada DDL karena lebih masuk kearah DML (Data Manipulation Language). Sedangkan perintah CONNECT dan EXECUTE ada pada DCL (Data Control Language). DDL, DML, dan juga DCL sama sama bisa digunakan pada SQL.</p>
+
+            <p>Berikut adalah beberapa perintah pada DDL:</p><br>
+
+            <p>1.Perintah Membuat (Create)</p>
+
+            <p>Create database berfungsi untuk membuat database baru</p>
+            <p>Create Function berfungsi untuk membuat fungsi pada database</p>
+            <p>Create index berfungsi untuk membuat index pada database</p>
+            <p>Create procedur berfungsi untuk membuat procedure pada database</p>
+            <p>2.Perintah Merubah (Alter)</p>
+
+            <p>Perintah yang digunakan untuk merubah struktur dari sebuah tabel.</p>
+
+            <p>3.Perintah menghapus (Drop)</p>
+
+            <p>Drop Database yaitu perintah yang berfungsi untuk menghapus database. (Contoh: DROP nama_database;).</p>
+            <p>Drop Table yaitu perintah yang digunakan untuk menghapus tabel pada database.</p>
+
+            <p>Contoh :</p>
+
+            <p>Perintah berikut akan membuat table pada database kita dengan nama "UMS_Siswa"</p>
+            <p>CREATE TABLE UMS_Siswa (</p>
+            <p>Nama_Siswa varchar(100) default NULL,</p>
+            <p>NIM_Siswa varchar(10) NOT NULL,</p>
+            <p>Alamat_Siswa varchar(100) default NULL,</p>
+            <p>jenis_kelamin varchar(1) default NULL,</p>
+            <p>PRIMARY KEY (NIM_Siswa) )</p>
+
+
+
+
+
+                                
+                     
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
